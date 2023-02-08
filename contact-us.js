@@ -82,6 +82,20 @@ function container(){
     submitBtn.style.letterSpacing="2px";
     submitBtn.style.borderRadius="5px";
 
+    submitBtn.addEventListener('click',()=>{
+        if(inputName.value==""||inputEmail.value==""||inputSubject.value==""||inputProject.value==""){
+            alert("Please Enter All Details");
+        }
+        else{
+            alert("Thanks i'll contact you soon")
+            inputName.value="";
+            inputEmail.value="";
+            inputSubject.value="";
+            inputProject.value="";
+
+        }
+    })
+
 
     contactContainer.appendChild(inputName);
     contactContainer.appendChild(inputEmail);
